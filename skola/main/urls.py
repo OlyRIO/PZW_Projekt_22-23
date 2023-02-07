@@ -9,4 +9,6 @@ urlpatterns = [
     path('ucenici/', UcenikList.as_view()),
     path('ucionice/', UcionicaList.as_view()),
     path('predmeti/', PredmetList.as_view()),
+    path('', views.index, name='homepage'),
+    path('register/', views.register_request)
 ]
