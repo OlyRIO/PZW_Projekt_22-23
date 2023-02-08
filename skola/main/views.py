@@ -13,9 +13,6 @@ from django.contrib import messages
 def index(request):
     return render(request, 'main/homepage.html')
 
-
-
-
 class ProfesorList(ListView):
     model = Profesor
 
