@@ -10,5 +10,9 @@ urlpatterns = [
     path('ucionice/', UcionicaList.as_view(), name='ucionice'),
     path('predmeti/', PredmetList.as_view(), name='predmeti'),
     path('', views.index, name='homepage'),
-    path('register/', views.register_request, name='register')
+    path('register/', views.register_request, name='register'),
+    path('add_profesor/', views.add_profesor),
+    path('add_predmet/', views.add_predmet),
+    path('add_ucenik/', views.add_ucenik),
+    path('add_ucionica/', views.add_ucionica),
 ]

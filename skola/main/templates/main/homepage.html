@@ -6,6 +6,13 @@
 
 <body>
     <h1>Osnovna Škola "Zamet"</h1>
+    <div style="position:absolute;right:20px;top:10px">
+        <a href="register">Register</a></li>
+    </div>
+    <div style="position:absolute;right:120px;top:10px">
+        <a href="accounts/login">Log in</a></li>
+    </div>
+       
     
     {% if user.is_authenticated %}
         <p>Vaše ime: {{ user.username }}</p>
@@ -20,6 +27,10 @@
             <li><a href="/ucenici">Učenici</a></li>
             <li><a href="/ucionice">Učionice</a></li>
             <li><a href="/predmeti">Predmeti</a></li>
+            <li><a href="/add_profesor">Dodaj profesora</a></li>
+            <li><a href="/add_ucenik">Dodaj učenika</a></li>
+            <li><a href="/add_ucionica">Dodaj učionicu</a></li>
+            <li><a href="/add_predmet">Dodaj predmet</a></li>
         </ul>
         {% endblock %}
     </div>
