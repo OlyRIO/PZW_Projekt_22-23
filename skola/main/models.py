@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Profesor(models.Model):
     profesor_ime = models.CharField(max_length=100)
     profesor_prezime = models.CharField(max_length=100)
@@ -30,7 +29,6 @@ class Ucenik(models.Model):
     class Meta:
         verbose_name_plural = "Ucenici"
 
-
 class Ucionica(models.Model):
     predmet = models.OneToOneField(
         Predmet,
@@ -43,6 +41,3 @@ class Ucionica(models.Model):
         return f"Ucionica {self.ucionica_broj}"
     class Meta:
         verbose_name_plural = "Ucionice"
- 
-
-# Create your models here.
