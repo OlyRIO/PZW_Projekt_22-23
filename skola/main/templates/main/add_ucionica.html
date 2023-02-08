@@ -1,0 +1,23 @@
+{% block content %}
+
+    <center>
+    <h1>Dodaj učionicu u bazu podataka</h1>
+    <hr><hr>
+    {% if submitted %}
+
+        Vaša učionica je uspiješno dodana.
+
+    {% else %}
+
+        <form action="" method=POST> 
+            {% csrf_token %}
+
+            {{form.as_p}}
+
+            <input type="submit" value="Unesi" class="btn btn-success">
+        </form>
+
+    {% endif %}
+    
+    </center>
+{% endblock %}
